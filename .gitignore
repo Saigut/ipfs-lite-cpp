@@ -11,3 +11,6 @@ Debug/
 .vs/
 *.code-workspace
 CMakeSettings.json
+
+.idea/
+cmake-build-*

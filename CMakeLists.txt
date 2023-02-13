@@ -43,6 +43,12 @@ print("CXX Debug flags: ${CMAKE_CXX_FLAGS_DEBUG}")
 print("C Release flags: ${CMAKE_C_FLAGS_RELEASE}")
 print("CXX Release flags: ${CMAKE_CXX_FLAGS_RELEASE}")
 
+# conan
+#include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+#conan_basic_setup()
+#include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
+include(${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
+
 # BOOST library
 # set(Boost_USE_STATIC_LIBS ON)
 # set(Boost_USE_MULTITHREADED ON)
@@ -60,11 +66,11 @@ include_directories(
 find_package(GTest CONFIG REQUIRED)
 find_package(OpenSSL REQUIRED)
 find_package(spdlog CONFIG REQUIRED)
-find_package(tsl_hat_trie CONFIG REQUIRED)
-find_package(libp2p CONFIG REQUIRED)
+find_package(tsl-hat-trie CONFIG REQUIRED)
+#find_package(libp2p CONFIG REQUIRED)
 #find_package(c-ares CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
-find_package(soralog CONFIG REQUIRED)
+#find_package(soralog CONFIG REQUIRED)
 find_package(yaml-cpp CONFIG REQUIRED)
 find_package(Protobuf CONFIG REQUIRED)
 find_package(RocksDB CONFIG REQUIRED)
