@@ -3,6 +3,7 @@
 #include "primitives/big_int.hpp"
 
 #include <gtest/gtest.h>
+#include <boost/optional/optional_io.hpp>
 #include "primitives/cid/cid.hpp"
 #include "testutil/literals.hpp"
 #include "testutil/outcome.hpp"
