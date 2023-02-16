@@ -23,7 +23,8 @@ target_include_directories(graphsync PRIVATE "${CMAKE_BINARY_DIR}/generated/ipfs
 
 target_link_libraries(graphsync
     Boost::boost
-    p2p_subscription
+    subscription
+    ${GV_nlp_p2p_libs}
     cid
     buffer
     cbor

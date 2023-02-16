@@ -3,7 +3,8 @@ addtest(datastore_integration_test
     datastore_integration_test.cpp
     )
 target_link_libraries(datastore_integration_test
-    p2p_p2p_random_generator
+    p2p_random_generator
+    ${GV_nlp_p2p_libs}
     ipfs_datastore_rocksdb
     Boost::filesystem
     )
@@ -12,7 +13,8 @@ addtest(in_memory_ipfs_datastore_test
     in_memory_ipfs_datastore_test.cpp
     )
 target_link_libraries(in_memory_ipfs_datastore_test
-    p2p_p2p_random_generator
+    p2p_random_generator
+    ${GV_nlp_p2p_libs}
     ipfs_datastore_in_memory
     )
 

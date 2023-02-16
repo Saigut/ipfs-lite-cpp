@@ -8,7 +8,8 @@ target_link_libraries(cid
     Boost::boost
     blake2
     cbor
-    p2p_p2p_cid
+    p2p_cid
+    ${GV_nlp_p2p_libs}
     c-ares::cares
     soralog
     fmt::fmt

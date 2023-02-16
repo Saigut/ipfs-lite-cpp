@@ -5,6 +5,7 @@ addtest(cbor_test
 target_link_libraries(cbor_test
     cbor
     hexutil
+    ${GV_nlp_p2p_libs}
     )
 
 addtest(cbor_buffering_test
