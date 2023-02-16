@@ -6,7 +6,7 @@ addtest(graphsync_acceptance_test
 target_link_libraries(graphsync_acceptance_test
     graphsync
     ipfs_merkledag_service
-    p2p::asio_scheduler
+    p2p_asio_scheduler
     Boost::date_time
     Boost::regex
     ${WIN_CRYPT_LIBRARY}

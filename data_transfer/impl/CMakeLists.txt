@@ -4,5 +4,5 @@ add_library(libp2p_data_transfer_network
     )
 target_link_libraries(libp2p_data_transfer_network
     data_transfer
-    p2p::p2p
+    p2p
     )

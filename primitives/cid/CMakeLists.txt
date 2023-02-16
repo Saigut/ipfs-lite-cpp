@@ -8,9 +8,9 @@ target_link_libraries(cid
     Boost::boost
     blake2
     cbor
-    p2p::p2p_cid
+    p2p_p2p_cid
     c-ares::cares
-    soralog::soralog
+    soralog
     fmt::fmt
     )
 

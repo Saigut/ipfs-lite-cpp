@@ -5,7 +5,7 @@
 #    message.cpp
 #    )
 #target_link_libraries(data_transfer
-#    p2p::p2p
+#    p2p
 #    logger
 #    ipld_node
 #    )
